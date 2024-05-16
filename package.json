@@ -2,11 +2,10 @@
   "name": "eclass-system-speedrunner",
   "version": "1.0.0",
   "description": "don't waste time!",
-  "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack/webpack.config.js"
   },
-  "author": "",
+  "author": "tjertmkr",
   "license": "MIT",
   "devDependencies": {
     "@types/chrome": "0.0.158",

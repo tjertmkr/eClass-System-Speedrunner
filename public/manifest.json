@@ -1,0 +1,37 @@
+{
+   "name": "eClass-System Speedrunner",
+   "description": "Don't waste time!",
+   "version": "1.0",
+   "manifest_version": 3,
+   "action": {},
+   "permissions": [
+      "tabs",
+      "scripting"
+   ],
+   "icons": {
+      "16": "assets/app-icon16.png",
+      "48": "assets/app-icon48.png",
+      "128": "assets/app-icon.png"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [
+      {
+         "matches": [
+            "https://*.ac.kr/ilos/main/main_form.acl"
+         ],
+         "js": [
+            "jquery-1.11.3.min.js",
+            "content.js"
+         ],
+         "css": [
+            "global.css"
+         ]
+      }
+   ],
+   "content_security_policy": {
+      "extension_pages": "script-src 'self'; object-src 'self'",
+      "default-src": "script-src 'self'; object-src 'self'"
+   }
+}

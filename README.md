@@ -1,4 +1,4 @@
-# eClass-System-Speedrunner
+# LMS-Speedrunner
 Don't waste time!
 
 # Window
